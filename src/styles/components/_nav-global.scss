@@ -1,0 +1,30 @@
+.nav-global {
+  background-color: #fff;
+  border-bottom: 1px solid #ededed;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  .logo {
+    max-width: 264px;
+  }
+
+  @media (max-width: 575.98px) {
+    .logo {
+      max-width: 200px;
+    }
+  }
+}
+
+.nav-info {
+  display: flex;
+  align-items: center;
+
+  .left {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+  }
+  .right {
+
+  }
+}

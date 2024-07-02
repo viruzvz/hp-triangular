@@ -1,0 +1,9 @@
+extends /layouts/template.pug
+include ../components/counter.pug
+block main
+  include ../sections/header.pug
+  include ../sections/quemsomos.pug
+  include ../sections/servicos.pug
+  include ../sections/servicos.pug
+  section.b-lowgray
+    +count('first-count','pacientes satisfeitos')
