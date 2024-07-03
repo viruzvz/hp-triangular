@@ -28,25 +28,31 @@
 .link-whatsapp,
 .link-youtube,
 .link-instagram {
-  &:hover {
-    color: $c-primary;
-  }
+  color: $c-primary;
 }
 
 .link-facebook {
-  color: $facebook;
+  &:hover {
+    color: $facebook;
+  }
 }
 
 .link-whatsapp {
-  color: $whatsapp;
+  &:hover {
+    color: $whatsapp;
+  }
 }
 
 .link-youtube {
-  color: $youtube;
+  &:hover {
+    color: $youtube;
+  }
 }
 
 .link-instagram {
-  color: $instagram;
+  &:hover {
+    color: $instagram;
+  }
 }
 
 .link-vz {
