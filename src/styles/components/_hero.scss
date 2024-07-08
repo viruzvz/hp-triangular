@@ -7,15 +7,10 @@
   .hero-style {
     background-image: url("/src/assets/swimming-pool-resort.webp");
     background-size: cover;
-    min-height: 600px;
+    min-height: 500px;
     background-position: center; 
     @media (max-width: 991.98px) {
       min-height: 400px;
-      background-image: url("/src/assets/bg-paralax.webp");
-      background-attachment: fixed;
-      .break-line {
-        display: inline-block;
-      }
     }
   }
   
@@ -36,7 +31,7 @@
   }
   
   .hero-gradient {
-    background: linear-gradient(180deg, rgba(59,89,152,1) 0%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(180deg, rgba(61,101,13,0.5) 0%, rgba(255,255,255,0) 100%);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -59,12 +54,25 @@
   }
   
   .hero-caption {
-    color: #fff;
     h1, p {
       margin-bottom: 15px;
+      color: #fff;
     }
   }
 
   .hero-border {
     border-bottom: 4px solid $c-primary;
+  }
+  
+  .hero-paralax {
+    height: 630px;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .hero-paralax--background {
+    background-image: url('/src/assets/bg-paralax.webp');
   }

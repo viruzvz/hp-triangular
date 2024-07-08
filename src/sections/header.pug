@@ -1,37 +1,17 @@
-.header  
-  .container
-    .row
-      .Triad.py-3
-        div
-          figure.m-0
-            img(src="src/assets/logo-primaria.svg", alt="Logo triangular")
-        div.nav-info
-          .left
-            span.text-xl4.fa-solid.fa-clock.me-2.c-primary
-            div.c-secondary
-              .fw-bold.text-sm SEG A SEX DE 07H ÁS 19H - SÁB 09H ÀS 17H
-              .text-sm.text-end.lh-sm fechado aos domingos
-          .right.text-xl2.c-primary
-            a.link.link-facebook.me-5(href="#")
-              span.fa-brands.fa-facebook
-            a.link.link-instagram(href="#")
-              span.fa-brands.fa-square-instagram
+.container.position-relative
+  .row
+    .Triad.control-header
+      div
+        figure.m-0
+          img(src="src/assets/logo-primaria.svg", alt="Logo triangular")
+      div.nav-info
+        .left
+          span.text-xl4.fa-solid.fa-clock.me-2.c-primary
+          div.c-secondary
+            .fw-bold.text-sm SEG A SEX DE 07H ÁS 19H - SÁB 09H ÀS 17H
+            .text-sm.text-end.lh-sm fechado aos domingos
+        .right.text-xl2.c-primary
+          include ../components/social.pug
 
-.navbar.navbar-expand-lg.navbar-power
-  .container
-    .col-lg-7.col-sm-12
-      //- a.navbar-brand(href='#') Navbar
-      button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation')
-        span.navbar-toggler-icon
-      #navbarNavAltMarkup.collapse.navbar-collapse.collapse-power
-        .navbar-nav
-          a.link.link-power(aria-current='page' href='#') Home
-          a.link.link-power(href='#') Features
-          a.link.link-power(href='#') Pricing
-    .col-lg-5
-      .contact-power
-        a.link.link-power.w-100(href='tel:61982301562')
-          i.fa-solid.fa-phone
-          | +55 (61) 98230-1562
+    include ../components/nav.pug
 
-include ../components/hero.pug

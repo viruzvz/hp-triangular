@@ -103,17 +103,17 @@
   color: $c-primary;
 }
 
-.btn-primaryTheme {
-  background-color: #587008;
+.btn-tertiaryTheme {
+  background-color: $c-tertiary !important;
   border-color: adjust-hue(#000, 5deg);
-  color: #fff;
+  color: #fff !important;
   transition: $transition;
-  border-radius: 0;
+  border-radius: 0 !important;
   display: inline-flex;
   &:hover {
     color: #fff;
-    background-color: adjust-hue($c-primary, 5deg);
-    border-color: adjust-hue($c-secondary, 10deg);
+    background-color: adjust-hue($c-primary, 5deg) !important;
+    border-color: adjust-hue($c-secondary, 10deg) !important;
   }
 }
 

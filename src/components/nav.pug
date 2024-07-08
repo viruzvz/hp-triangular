@@ -1,10 +1,16 @@
-nav.navbar.navbar-expand-lg.navbar-dark.bg-primary.mb-5
-  .container-fluid
-    a.navbar-brand(href='#') Navbar
-    button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
-      span.navbar-toggler-icon
-    #navbarNav.collapse.navbar-collapse
-      ul.navbar-nav(id="navigation")
-        each item in ['index', 'about']
-          li.nav-item
-            a.nav-link.active(href="/" + item)=item
+nav.fixed-nav
+  .navbar.navbar-expand-lg
+    .col-lg-7.col-sm-12
+      //- a.navbar-brand(href='#') Navbar
+      button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarNavAltMarkup.collapse.navbar-collapse.collapse-header
+        .navbar-nav
+          a.link.link-header(aria-current='page' href='#') Home
+          a.link.link-header(href='#') Features
+          a.link.link-header(href='#') Pricing
+    .col-lg-5
+      .contact-header
+        a.link.link-header.w-100(href='tel:61982301562')
+          i.fa-solid.fa-phone
+          | +55 (61) 98230-1562

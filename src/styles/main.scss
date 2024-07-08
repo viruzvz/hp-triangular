@@ -15,6 +15,7 @@
 @import "components/iconbox";
 @import "components/carousel-box";
 @import "components/galeria";
+@import "components/iplay";
 
 
 // default page styles
@@ -36,21 +37,29 @@ h5 {
   color: $c-secondary;
 }
 
-// .mainItemSpacer {
-//   margin-bottom: 30px;
-//   @media (max-width: 991.98px) {
-//     margin-bottom: 15px;
-//   }
-// }
+section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  @media (max-width: 991.98px) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
 
-// section {
-//   padding-top: 30px;
-//   padding-bottom: 30px;
-//   @media (max-width: 991.98px) {
-//     padding-top: 15px;
-//     padding-bottom: 15px;
-//   }
-// }
+.servicos {
+  background-image: url('/src/assets/logo-bg-content.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-blend-mode: color-burn;
+  background-color: rgba(248, 248, 248, 0.9);
+}
+
+.photo-gallery {
+  background-image: url('/src/assets/bg-fdarkflowers.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 // .myUL {
 //   display: inline-block;
@@ -79,16 +88,16 @@ h5 {
 //   }
 // }
 
-// @media (min-width: 992px) {
-//   .copyright {
-//     &:last-child {
-//       text-align: end;
-//     }
-//   }
-// }
+@media (min-width: 992px) {
+  .copyright {
+    &:last-child {
+      text-align: end;
+    }
+  }
+}
 
-// @media (max-width: 991.98px) {
-//   .copyright {
-//     text-align: center;
-//   }
-// }
+@media (max-width: 991.98px) {
+  .copyright {
+    text-align: center;
+  }
+}

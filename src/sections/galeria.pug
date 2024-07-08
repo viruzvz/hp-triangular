@@ -1,49 +1,48 @@
-.photo-gallery
-  .container
-    .row
-      .col-12.titles
-        span
-        h2 Projetos Galeria
-        span
-    .row.row-cols-1.row-cols-md-2.row-cols-lg-3.g-4.gallery-grid
-      .col
-        a.gallery-item(href='https://picsum.photos/id/251/1200/800.webp')
-          img.img-fluid(src='https://picsum.photos/id/251/480/320.webp' alt='Lorem ipsum dolor sit amet')
-      .col
-        a.gallery-item(href='https://picsum.photos/id/678/1200/800.webp')
-          img.img-fluid(src='https://picsum.photos/id/678/480/320.webp' alt='Ipsum lorem dolor sit amet')
-      .col
-        a.gallery-item(href='https://picsum.photos/id/74/1200/800.webp')
-          img.img-fluid(src='https://picsum.photos/id/74/480/320.webp' alt='Dolor lorem ipsum sit amet')
-      .col
-        a.gallery-item(href='https://picsum.photos/id/92/1200/800.webp')
-          img.img-fluid(src='https://picsum.photos/id/92/480/320.webp' alt='Sit amet lorem ipsum dolor')
-      .col
-        a.gallery-item(href='https://picsum.photos/id/62/1200/800.webp')
-          img.img-fluid(src='https://picsum.photos/id/62/480/320.webp' alt='Aut ipsam deserunt nostrum quo')
-      .col
-        a.gallery-item(href='https://picsum.photos/id/575/1200/800.webp')
-          img.img-fluid(src='https://picsum.photos/id/575/480/320.webp' alt='Nulla ex nihil eligendi tempora')
-      .col
-        a.gallery-item(href='https://picsum.photos/id/110/1200/800.webp')
-          img.img-fluid(src='https://picsum.photos/id/110/480/320.webp' alt='Nemo perspiciatis voluptatum')
-      .col
-        a.gallery-item(href='https://picsum.photos/id/177/1200/800.webp')
-          img.img-fluid(src='https://picsum.photos/id/177/480/320.webp' alt='Accusantium consequuntur modi')
-      .col
-        a.gallery-item(href='https://picsum.photos/id/197/1200/800.webp')
-          img.img-fluid(src='https://picsum.photos/id/197/480/320.webp' alt='Dolore asperiores reprehenderit')
+.container
+  .row
+    .col-12
+      .titles
+        h2.c-white Projetos 
+          span Galeria
+  .row.row-cols-1.row-cols-md-2.row-cols-lg-3.g-4.gallery-grid
+    .col
+      a.gallery-item(href='https://picsum.photos/id/251/1200/800.webp')
+        img.img-fluid(src='https://picsum.photos/id/251/480/320.webp' alt='Lorem ipsum dolor sit amet')
+    .col
+      a.gallery-item(href='https://picsum.photos/id/678/1200/800.webp')
+        img.img-fluid(src='https://picsum.photos/id/678/480/320.webp' alt='Ipsum lorem dolor sit amet')
+    .col
+      a.gallery-item(href='https://picsum.photos/id/74/1200/800.webp')
+        img.img-fluid(src='https://picsum.photos/id/74/480/320.webp' alt='Dolor lorem ipsum sit amet')
+    .col
+      a.gallery-item(href='https://picsum.photos/id/92/1200/800.webp')
+        img.img-fluid(src='https://picsum.photos/id/92/480/320.webp' alt='Sit amet lorem ipsum dolor')
+    .col
+      a.gallery-item(href='https://picsum.photos/id/62/1200/800.webp')
+        img.img-fluid(src='https://picsum.photos/id/62/480/320.webp' alt='Aut ipsam deserunt nostrum quo')
+    .col
+      a.gallery-item(href='https://picsum.photos/id/575/1200/800.webp')
+        img.img-fluid(src='https://picsum.photos/id/575/480/320.webp' alt='Nulla ex nihil eligendi tempora')
+    .col
+      a.gallery-item(href='https://picsum.photos/id/110/1200/800.webp')
+        img.img-fluid(src='https://picsum.photos/id/110/480/320.webp' alt='Nemo perspiciatis voluptatum')
+    .col
+      a.gallery-item(href='https://picsum.photos/id/177/1200/800.webp')
+        img.img-fluid(src='https://picsum.photos/id/177/480/320.webp' alt='Accusantium consequuntur modi')
+    .col
+      a.gallery-item(href='https://picsum.photos/id/197/1200/800.webp')
+        img.img-fluid(src='https://picsum.photos/id/197/480/320.webp' alt='Dolore asperiores reprehenderit')
 
 #lightbox-modal.modal.fade.lightbox-modal(tabindex='-1')
-  .modal-dialog.modal-dialog-centered.modal-fullscreen
-    .modal-content
-      button.btn-fullscreen-enlarge(type='button' aria-label='Enlarge fullscreen')
-        svg.bi
-          use(href='#enlarge')
-      button.btn-fullscreen-exit.d-none(type='button' aria-label='Exit fullscreen')
-        svg.bi
-          use(href='#exit')
-      button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
-      .modal-body
-        .lightbox-content
-          // JS content here
+.modal-dialog.modal-dialog-centered.modal-fullscreen
+  .modal-content
+    button.btn-fullscreen-enlarge(type='button' aria-label='Enlarge fullscreen')
+      svg.bi
+        use(href='#enlarge')
+    button.btn-fullscreen-exit.d-none(type='button' aria-label='Exit fullscreen')
+      svg.bi
+        use(href='#exit')
+    button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+    .modal-body
+      .lightbox-content
+        // JS content here

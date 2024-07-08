@@ -1,20 +1,19 @@
 .container
-	.row 
-		.col-12.titles
-			span
-			h2 Especialidades em Destaque
-			span
-		.col-6
-			mixin media(title, text)
-				.d-flex.position-relative
-					img.flex-shrink-0.me-3(src='src/assets/icon-triang.svg' alt=title)
-					div
-						h5.mt-0= title
-						p
-							= text
-						a.stretched-link(href='#') Go somewhere
-			+media('Titulo 1','Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo blanditiis facere perferendis consectetur inventore dicta enim numquam')
-			+media('Titulo 2','Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo blanditiis facere perferendis consectetur inventore dicta enim numquam')
-		.col-6
-			+media('Titulo 3','Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo blanditiis facere perferendis consectetur inventore dicta enim numquam')
-			+media('Titulo 4','Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo blanditiis facere perferendis consectetur inventore dicta enim numquam')
+  .row
+    .col-12
+      .titles.text-center
+        h2.c-secondary Escolha nossos 
+          span Serviços
+    .col-lg-6.col-md-12
+      mixin media(title, text)
+        .d-flex.position-relative.media-style
+          img.flex-shrink-0.me-3(src='src/assets/icon-triang.svg' alt=title)
+          div.c-secondary
+            h5.mt-0= title
+            p.mb-0
+            = text
+      +media('Projeto de paisagismo','A Triangular paisagismo desenvolve projetos pré-visualizados para a realização e adequação do seu espaço. Com bom gosto e opções para que sinta-se confortável com a ideia projetada que será aplicada. ')
+      +media('Podas','Podas podem gerar transtornos, porém com o especialista correto terá o melhor serviço. Podamos arvores complexas, transplatamos árvores e removemos toda poda do local. ')
+    .col-lg-6.col-md-12
+      +media('Manutenção de jardins','Temos experiência com manutenção de variados tipos de jardins. Trabalhamos para condomínios, casas, fazendas, sítios e chácaras.')
+      +media('Limpeza e organização','Trabalhamos com limpeza do terreno, removendo restos de obras.')
