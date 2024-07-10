@@ -33,16 +33,3 @@
       a.gallery-item(href='https://picsum.photos/id/197/1200/800.webp')
         img.img-fluid(src='https://picsum.photos/id/197/480/320.webp' alt='Dolore asperiores reprehenderit')
 
-#lightbox-modal.modal.fade.lightbox-modal(tabindex='-1')
-.modal-dialog.modal-dialog-centered.modal-fullscreen
-  .modal-content
-    button.btn-fullscreen-enlarge(type='button' aria-label='Enlarge fullscreen')
-      svg.bi
-        use(href='#enlarge')
-    button.btn-fullscreen-exit.d-none(type='button' aria-label='Exit fullscreen')
-      svg.bi
-        use(href='#exit')
-    button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
-    .modal-body
-      .lightbox-content
-        // JS content here

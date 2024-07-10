@@ -1,16 +1,19 @@
 nav.fixed-nav
   .navbar.navbar-expand-lg
-    .col-lg-7.col-sm-12
-      //- a.navbar-brand(href='#') Navbar
-      button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation')
-        span.navbar-toggler-icon
-      #navbarNavAltMarkup.collapse.navbar-collapse.collapse-header
-        .navbar-nav
-          a.link.link-header(aria-current='page' href='#') Home
-          a.link.link-header(href='#') Features
-          a.link.link-header(href='#') Pricing
-    .col-lg-5
-      .contact-header
-        a.link.link-header.w-100(href='tel:61982301562')
-          i.fa-solid.fa-phone
-          | +55 (61) 98230-1562
+
+    button.navbar-toggle.collapsed.x(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation')
+      span.icon-bar
+      span.icon-bar
+      span.icon-bar
+
+    #navbarNavAltMarkup.collapse.navbar-collapse.collapse-header
+      .navbar-nav
+        a.link.link-header(aria-current='page' href='#') Home
+        a.link.link-header(href='#') Quem somos
+        a.link.link-header(href='#') Serviços
+        a.link.link-header(href='#') Galeria
+    
+    .contact-header
+      a.link.link-header.w-100(href='tel:61982301562')
+        i.fa-solid.fa-phone
+        | +55 (61) 98230-1562
