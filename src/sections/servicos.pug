@@ -4,7 +4,7 @@
       .titles.text-center
         h2.c-secondary Escolha nossos 
           span Serviços
-    .col-lg-6.col-md-12
+    .col-xl-6.col-lg-12
       mixin media(title, text)
         .d-flex.position-relative.media-style
           img.flex-shrink-0.me-3(src='src/assets/icon-triang.svg' alt=title)
@@ -14,6 +14,11 @@
             = text
       +media('Projeto de paisagismo','A Triangular paisagismo desenvolve projetos pré-visualizados para a realização e adequação do seu espaço. Com bom gosto e opções para que sinta-se confortável com a ideia projetada que será aplicada. ')
       +media('Podas','Podas podem gerar transtornos, porém com o especialista correto terá o melhor serviço. Podamos arvores complexas, transplatamos árvores e removemos toda poda do local. ')
-    .col-lg-6.col-md-12
+    .col-xl-6.col-lg-12
       +media('Manutenção de jardins','Temos experiência com manutenção de variados tipos de jardins. Trabalhamos para condomínios, casas, fazendas, sítios e chácaras.')
       +media('Limpeza e organização','Trabalhamos com limpeza do terreno, removendo restos de obras.')
+    .col-12 
+      .mt-4.text-center
+        a.btn.btn-success(href="#" title="Saiba mais") 
+          span.fa-brands.fa-whatsapp
+          |  Saiba mais

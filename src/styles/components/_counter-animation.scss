@@ -18,8 +18,8 @@
   content: counter(num);
 }
 
-.first-count { --num:6000; }
-.second-count { --num:1800; }
+.first-count { --num:500; }
+.second-count { --num:15; }
 
 .count-wrapper {
   display: flex;
