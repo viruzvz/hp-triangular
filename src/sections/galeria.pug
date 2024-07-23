@@ -1,3 +1,11 @@
+mixin carousel-image(src, alt)
+  .carousel-item.text-center
+    img.img-fluid(src=src alt=alt)
+
+mixin col-gallery(src, value)
+  .col
+    a.logoHover-image(href='#' data-bs-toggle='modal' data-bs-target='#exampleLightbox')
+      img.img-fluid(data-bs-target='#lightbox' data-bs-slide-to=value src=src)
 .container
   .row
     .col-12
@@ -5,36 +13,45 @@
         h2.c-white Projetos 
           span Galeria
   .row.row-cols-1.row-cols-md-2.row-cols-lg-3.g-4.gallery-grid
-    .col
-      a.logoHover-image(href='https://picsum.photos/id/251/1200/800.webp')
-        img.img-fluid(src='https://picsum.photos/id/251/480/320.webp' alt='Lorem ipsum dolor sit amet')
-    .col
-      a.logoHover-image(href='https://picsum.photos/id/678/1200/800.webp')
-        img.img-fluid(src='https://picsum.photos/id/678/480/320.webp' alt='Ipsum lorem dolor sit amet')
-    .col
-      a.logoHover-image(href='https://picsum.photos/id/74/1200/800.webp')
-        img.img-fluid(src='https://picsum.photos/id/74/480/320.webp' alt='Dolor lorem ipsum sit amet')
-    .col
-      a.logoHover-image(href='https://picsum.photos/id/92/1200/800.webp')
-        img.img-fluid(src='https://picsum.photos/id/92/480/320.webp' alt='Sit amet lorem ipsum dolor')
-    .col
-      a.logoHover-image(href='https://picsum.photos/id/62/1200/800.webp')
-        img.img-fluid(src='https://picsum.photos/id/62/480/320.webp' alt='Aut ipsam deserunt nostrum quo')
-    .col
-      a.logoHover-image(href='https://picsum.photos/id/575/1200/800.webp')
-        img.img-fluid(src='https://picsum.photos/id/575/480/320.webp' alt='Nulla ex nihil eligendi tempora')
-    .col
-      a.logoHover-image(href='https://picsum.photos/id/110/1200/800.webp')
-        img.img-fluid(src='https://picsum.photos/id/110/480/320.webp' alt='Nemo perspiciatis voluptatum')
-    .col
-      a.logoHover-image(href='https://picsum.photos/id/177/1200/800.webp')
-        img.img-fluid(src='https://picsum.photos/id/177/480/320.webp' alt='Accusantium consequuntur modi')
-    .col
-      a.logoHover-image(href='https://picsum.photos/id/197/1200/800.webp')
-        img.img-fluid(src='https://picsum.photos/id/197/480/320.webp' alt='Dolore asperiores reprehenderit')
+    +col-gallery('https://unsplash.it/800/600.jpg?image=250', '1')
+    +col-gallery('https://unsplash.it/800/600.jpg?image=251', '2')
+    +col-gallery('https://unsplash.it/800/600.jpg?image=252', '3')
+    +col-gallery('https://unsplash.it/800/600.jpg?image=253', '4')
+    +col-gallery('https://unsplash.it/800/600.jpg?image=254', '5')
+    +col-gallery('https://unsplash.it/800/600.jpg?image=255', '6')
+    +col-gallery('https://unsplash.it/800/600.jpg?image=256', '7')
+    +col-gallery('https://unsplash.it/800/600.jpg?image=257', '8')
+    +col-gallery('https://unsplash.it/800/600.jpg?image=258', '9')
+
   .row
     .col-12 
       .mt-4.text-center
-        a.btn.btn-outline-danger(href="#" title="Veja mais no instagram") 
+        a.btn.btn-outline-danger(href="https://www.instagram.com/triangularpaisagismo" title="Veja mais no instagram" target="_blank") 
           span.fa-brands.fa-instagram
           |  Veja mais no instagram
+
+#exampleLightbox.modal.fade(tabindex='-1' aria-labelledby='exampleLightboxLabel' aria-hidden='true')
+  .modal-dialog.modal-xl.modal-dialog-centered
+    .modal-content
+      .modal-header
+        h5#exampleLightboxLabel.modal-title Triangular Galeria
+        button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+      .modal-body
+        #lightbox.carousel.slide
+          .carousel-inner.bg-dark
+            .carousel-item.text-center.active
+              img.img-fluid.mh-100(src='https://unsplash.it/800/600.jpg?image=250')
+            +carousel-image('https://unsplash.it/800/600.jpg?image=251', 'Texto teste')
+            +carousel-image('https://unsplash.it/800/600.jpg?image=252', 'Texto teste')
+            +carousel-image('https://unsplash.it/800/600.jpg?image=253', 'Texto teste')
+            +carousel-image('https://unsplash.it/800/600.jpg?image=254', 'Texto teste')
+            +carousel-image('https://unsplash.it/800/600.jpg?image=255', 'Texto teste')
+            +carousel-image('https://unsplash.it/800/600.jpg?image=256', 'Texto teste')
+            +carousel-image('https://unsplash.it/800/600.jpg?image=257', 'Texto teste')
+            +carousel-image('https://unsplash.it/800/600.jpg?image=258', 'Texto teste')
+          button.carousel-control-prev(type='button' data-bs-target='#lightbox' data-bs-slide='prev')
+            span.carousel-control-prev-icon(aria-hidden='true')
+            span.visually-hidden Previous
+          button.carousel-control-next(type='button' data-bs-target='#lightbox' data-bs-slide='next')
+            span.carousel-control-next-icon(aria-hidden='true')
+            span.visually-hidden Next

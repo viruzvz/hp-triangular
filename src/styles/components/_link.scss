@@ -105,7 +105,8 @@
 
 .btn-tertiaryTheme {
   background-color: $c-tertiary !important;
-  border-color: adjust-hue(#000, 5deg);
+  border-color: adjust-hue(#000, 5deg) !important;
+  border: 1px solid !important;
   color: #fff !important;
   transition: $transition;
   border-radius: 0 !important;
