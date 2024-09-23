@@ -5,7 +5,7 @@ mixin carousel-image(src, alt)
 mixin col-gallery(src, value, alt)
   .col
     a.logoHover-image(href='#' data-bs-toggle='modal' data-bs-target='#exampleLightbox' title="Abrir foto")
-      img.img-fluid(data-bs-target='#lightbox' data-bs-slide-to=value src=src)
+      img.img-fluid(data-bs-target='#lightbox' data-bs-slide-to=value src=src alt=alt)
 .container
   .row
     .col-12
