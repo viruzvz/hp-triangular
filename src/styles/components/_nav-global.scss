@@ -62,8 +62,11 @@
   background-color: #fff;
   border-bottom: 1px solid #f4f4f4;
   @media (max-width: 991.98px) {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    .logo-primary {
+      max-width: 140px;
+    }
   }
   .navbar {
     @media (max-width: 991.98px) {

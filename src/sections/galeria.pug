@@ -2,9 +2,9 @@ mixin carousel-image(src, alt)
   .carousel-item.text-center
     img.img-fluid(src=src alt=alt)
 
-mixin col-gallery(src, value)
+mixin col-gallery(src, value, alt)
   .col
-    a.logoHover-image(href='#' data-bs-toggle='modal' data-bs-target='#exampleLightbox')
+    a.logoHover-image(href='#' data-bs-toggle='modal' data-bs-target='#exampleLightbox' title="Abrir foto")
       img.img-fluid(data-bs-target='#lightbox' data-bs-slide-to=value src=src)
 .container
   .row
@@ -13,15 +13,15 @@ mixin col-gallery(src, value)
         h2.c-white Projetos 
           span Galeria
   .row.row-cols-1.row-cols-md-2.row-cols-lg-3.g-4.gallery-grid
-    +col-gallery('https://unsplash.it/800/600.jpg?image=250', '1')
-    +col-gallery('https://unsplash.it/800/600.jpg?image=251', '2')
-    +col-gallery('https://unsplash.it/800/600.jpg?image=252', '3')
-    +col-gallery('https://unsplash.it/800/600.jpg?image=253', '4')
-    +col-gallery('https://unsplash.it/800/600.jpg?image=254', '5')
-    +col-gallery('https://unsplash.it/800/600.jpg?image=255', '6')
-    +col-gallery('https://unsplash.it/800/600.jpg?image=256', '7')
-    +col-gallery('https://unsplash.it/800/600.jpg?image=257', '8')
-    +col-gallery('https://unsplash.it/800/600.jpg?image=258', '9')
+    +col-gallery('src/assets/galeria/1.webp', '1', 'Poda de árvores')
+    +col-gallery('src/assets/galeria/2.webp', '2', 'Trabalhador paisagista sorrindo')
+    +col-gallery('src/assets/galeria/3.webp', '3', 'Poda de árvores')
+    +col-gallery('src/assets/galeria/4.webp', '4', 'Cuidando do jardim')
+    +col-gallery('src/assets/galeria/5.webp', '5', 'Paisagista aterrando e feliz')
+    +col-gallery('src/assets/galeria/6.webp', '6', 'Trabalhador paisaagista sorrindo')
+    +col-gallery('src/assets/galeria/7.webp', '7', 'Poda de árvores')
+    +col-gallery('src/assets/galeria/8.webp', '8', 'Cuidando do jardim')
+    +col-gallery('src/assets/galeria/9.webp', '9', 'Paisagismo')
 
   .row
     .col-12 
@@ -40,15 +40,15 @@ mixin col-gallery(src, value)
         #lightbox.carousel.slide
           .carousel-inner.bg-dark
             .carousel-item.text-center.active
-              img.img-fluid.mh-100(src='https://unsplash.it/800/600.jpg?image=250')
-            +carousel-image('https://unsplash.it/800/600.jpg?image=251', 'Texto teste')
-            +carousel-image('https://unsplash.it/800/600.jpg?image=252', 'Texto teste')
-            +carousel-image('https://unsplash.it/800/600.jpg?image=253', 'Texto teste')
-            +carousel-image('https://unsplash.it/800/600.jpg?image=254', 'Texto teste')
-            +carousel-image('https://unsplash.it/800/600.jpg?image=255', 'Texto teste')
-            +carousel-image('https://unsplash.it/800/600.jpg?image=256', 'Texto teste')
-            +carousel-image('https://unsplash.it/800/600.jpg?image=257', 'Texto teste')
-            +carousel-image('https://unsplash.it/800/600.jpg?image=258', 'Texto teste')
+              img.img-fluid.mh-100(src='src/assets/galeria/1.webp' alt="Poda de árvores")
+            +carousel-image('src/assets/galeria/2.webp', 'Trabalhador paisagista sorrindo')
+            +carousel-image('src/assets/galeria/3.webp', 'Poda de árvores')
+            +carousel-image('src/assets/galeria/4.webp', 'Cuidando do jardim')
+            +carousel-image('src/assets/galeria/5.webp', 'Paisagista aterrando e feliz')
+            +carousel-image('src/assets/galeria/6.webp', 'Trabalhador paisaagista sorrindo')
+            +carousel-image('src/assets/galeria/7.webp', 'Poda de árvores')
+            +carousel-image('src/assets/galeria/8.webp', 'Cuidando do jardim')
+            +carousel-image('src/assets/galeria/9.webp', 'Paisagismo')
           button.carousel-control-prev(type='button' data-bs-target='#lightbox' data-bs-slide='prev')
             span.carousel-control-prev-icon(aria-hidden='true')
             span.visually-hidden Previous

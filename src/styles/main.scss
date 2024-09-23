@@ -6,14 +6,14 @@
 @import "components/nav-global";
 @import "components/hero";
 @import "components/colors";
-@import "components/cards";
+// @import "components/cards";
 @import "components/titles";
 @import "components/link";
-@import "components/embed";
+// @import "components/embed";
 @import "components/media-flex";
 @import "components/counter-animation";
-@import "components/iconbox";
-@import "components/carousel-box";
+// @import "components/iconbox";
+// @import "components/carousel-box";
 @import "components/galeria";
 @import "components/iplay";
 @import "components/navbar-toggle";
@@ -62,33 +62,6 @@ section {
   background-position: center;
   background-size: cover;
 }
-
-// .myUL {
-//   display: inline-block;
-//   --icon-space: 1.3em;
-//   text-align: left;
-//   list-style: none;
-//   li:before {
-//     content: "";
-//     background-image: url('/src/assets/icons/checker.svg');
-//     background-repeat: no-repeat;
-//     background-position: center bottom;
-//     background-size: 15px;
-//     display: inline-block;
-//     margin-left: calc(var(--icon-space) * -1);
-//     width: 20px;
-//     height: 20px;
-//   }
-// }
-
-// .becarousel {
-//   display: flex;
-//   .item {
-//     width: 25%;
-//     display: flex;
-//     justify-content: space-between;
-//   }
-// }
 
 @media (min-width: 992px) {
   .copyright {
