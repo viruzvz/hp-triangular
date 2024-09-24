@@ -1,6 +1,7 @@
 // Import all of Bootstrap's JS
 import * as bootstrap from 'bootstrap'
 import '/src/js/lightbox.js'
+import lazyframe from "lazyframe"
 
 // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
 window.addEventListener('scroll', function() {

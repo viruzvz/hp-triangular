@@ -1,0 +1,12 @@
+@import "/node_modules/lazyframe/src/scss/lazyframe.scss"
+
+lazyframe(elements, {
+  debounce: 250,
+  lazyload: true,
+  autoplay: true,
+
+  // Callbacks
+  onLoad: (lazyframe) => console.log(lazyframe),
+  onAppend: (iframe) => console.log(iframe),
+  onThumbnailLoad: (img) => console.log(img),
+})

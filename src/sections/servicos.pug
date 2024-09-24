@@ -7,9 +7,9 @@
     .col-lg-12
       mixin media(title, text)
         .d-flex.position-relative.media-style
-          img.flex-shrink-0.me-3(src='src/assets/icon-triang.svg' alt=title)
+          img.flex-shrink-0.me-3.lazyload(src='src/assets/icon-triang.svg' alt=title width='48' height='48')
           div.c-secondary
-            h5.mt-0= title
+            h3.mt-0= title
             p.mb-0
             = text
       +media('Jardim Vertical','Nós, da Triangular paisagismo, costumamos dizer que nenhum móvel ou item de decoração consegue competir com a beleza da própria natureza. Nossos projetos criativos e sustentáveis transformam paredes vazias em belas obras-primas naturais. Para nossos jardins verticais serem bem sucedidos é preciso muita técnica, desde o método construtivo, drenagem, sistema de irrigação, substrato, impermeabilização da parede a cor dos vasos. Escolhemos somente as melhores plantas, pensando tanto na beleza, como na adaptação do clima e do solo. Com a experiência de nossa equipe podemos transformar várias paredes no lugar mais incrível da sua residência.  Prezamos pelo cuidado em cada detalhe. Temos uma vasta referência de clientes satisfeitos, e seguimos cumprindo nossa missão. Descubra como um jardim vertical pode revitalizar seu espaço. Solicite uma consultoria hoje mesmo.')
@@ -19,6 +19,6 @@
       +media('Limpeza de Terreno','Se o seu terreno não estiver sendo utilizado por muito tempo, provavelmente você terá braquiárias e ervas daninhas, sendo necessário o uso de equipamentos adequados. A limpeza de roçagem proporciona cortar ou aparar o mato muito baixo, rente ao chão, com finalidade de remover capins e matos em geral, trazendo limpeza para o local. Na Triangular Paisagismo, além dos serviços com roçadeiras, também temos a opção de uma limpeza mais profunda, com maquinário pesado, como BobCat, retroescavadeira e pá mecânica, retirando restos de raízes, tocos, vegetações, entulhos e outros materiais impeditivos.Entre em contato e descubra como podemos ajudar a transformar seu terreno!')
     .col-12 
       .mt-4.text-center
-        a.btn.btn-success(href="#" title="Saiba mais") 
+        a.btn.btn-success.rounded-0(href="#" title="Saiba mais") 
           span.fa-brands.fa-whatsapp
           |  Saiba mais

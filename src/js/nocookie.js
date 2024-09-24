@@ -1,1 +1,0 @@
-document.cookie="__Host-name=value; Secure; Path=/; SameSite=None; Partitioned;"

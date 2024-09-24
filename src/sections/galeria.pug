@@ -1,11 +1,11 @@
 mixin carousel-image(src, alt)
   .carousel-item.text-center
-    img.img-fluid(src=src alt=alt)
+    img.img-fluid.lazyload(src=src alt=alt)
 
 mixin col-gallery(src, value, alt)
   .col
     a.logoHover-image(href='#' data-bs-toggle='modal' data-bs-target='#exampleLightbox' title="Abrir foto")
-      img.img-fluid(data-bs-target='#lightbox' data-bs-slide-to=value src=src alt=alt)
+      img.img-fluid.lazyload(data-bs-target='#lightbox' data-bs-slide-to=value src=src alt=alt width='416' heigh='416')
 .container
   .row
     .col-12
@@ -26,7 +26,7 @@ mixin col-gallery(src, value, alt)
   .row
     .col-12 
       .mt-4.text-center
-        a.btn.btn-outline-danger(href="https://www.instagram.com/triangularpaisagismo" title="Veja mais no instagram" target="_blank") 
+        a.btn.btn-outline-danger.rounded-0(href="https://www.instagram.com/triangularpaisagismo" title="Veja mais no instagram" target="_blank") 
           span.fa-brands.fa-instagram
           |  Veja mais no instagram
 

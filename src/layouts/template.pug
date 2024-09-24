@@ -24,19 +24,22 @@ html(lang="pt-br")
     link(rel='mask-icon' href='/src/assets/favicon/safari-pinned-tab.svg' color='#5bbad5')
     meta(name='msapplication-TileColor' content='#da532c')
     meta(name='theme-color' content='#ffffff')
-
-    link(rel="stylesheet", href="/src/styles/main.scss")
-    link(rel="stylesheet", href="/src/styles/bootstrap.scss")
-    link(rel="stylesheet", href="/src/styles/fontawesome.scss")
+    link(rel="preload" fetchpriority="high" as="image" href="/src/assets/pool-triangular.webp" type="image/webp")
+    link(rel="stylesheet", media="all", href="/src/styles/main.scss")
+    link(rel="stylesheet", media="all", href="/src/styles/bootstrap.scss")
+    link(rel="stylesheet", media="all", href="/src/styles/fontawesome.scss")
+    link(rel="stylesheet", media="all", href="/src/styles/lazyframe.scss")
+    
     // Google tag (gtag.js)
-    script(async='' src='https://www.googletagmanager.com/gtag/js?id=G-9JQ09NJF7M')
+    script(async='' type='text/plain' data-cookie-consent='tracking' src='https://www.googletagmanager.com/gtag/js?id=G-9JQ09NJF7M')
     script.
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-9JQ09NJF7M');
+      gtag('config', 'G-9JQ09NJF7M', { 'anonymize_ip': true });
   body
     block main
     footer 
       script(type="module", src="/src/js/main.js")
-      script(type="module", src="/src/js/nocookie.js")
+      script(type="module", src="/src/js/cookie-consent.js")
+      

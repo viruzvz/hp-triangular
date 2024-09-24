@@ -56,7 +56,7 @@
 }
 
 .link-vz {
-  color: $c-primary !important;
+  color: orange !important;
   &:hover {
     color: $c-secondary;
   }
@@ -104,7 +104,7 @@
 }
 
 .btn-tertiaryTheme {
-  background-color: $c-tertiary !important;
+  background-color: adjust-hue($c-primary, 5deg) !important;
   border-color: adjust-hue(#000, 5deg) !important;
   border: 1px solid !important;
   color: #fff !important;
@@ -113,7 +113,7 @@
   display: inline-flex;
   &:hover {
     color: #fff;
-    background-color: adjust-hue($c-primary, 5deg) !important;
+    background-color: $c-tertiary !important;
     border-color: adjust-hue($c-secondary, 10deg) !important;
   }
 }

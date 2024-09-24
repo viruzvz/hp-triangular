@@ -3,7 +3,7 @@
     .col-12 
       .d-flex.justify-content-center.flex-column.align-items-center.py-4.text-center
         .py-3
-          img(src="src/assets/logo-primaria.svg", alt="Logo Long Life", width="240px", heigh="160px")
+          img.lazyload(src="src/assets/logo-primaria.svg", alt="Logo Triangular Paisagismo", width="240", heigh="160")
         .pt-3 
           p: a.link.link-secondary(href="mailto:contatos@trinagularpaisagismo.com.br" title="contatos@trinagularpaisagismo.com.br")
             span.fa-solid.fa-envelope 
@@ -22,3 +22,12 @@
       small Copyright © 2024 | Todos os direitos reservados https://www.triangularpaisagismo.com.br/
     .col-md-6.copyright
       small Credit pictures from <a class="link link-vz" href="#" data-bs-toggle='modal' data-bs-target='#freepikModal' title="Créditos fotografias">freepik.com</a> | Developed by <a class="link link-vz" href="https://github.com/viruzvz" target="_blank" title="Link desenvolvedor">Carlos_vz</a>
+.wrapper
+  header.header-cookie
+    h2 Consentimento de Cookies
+    .data
+      p
+        | Este site usa cookies para ajudar você a ter uma experiência de navegação superior e mais relevante no site.
+  .buttons
+    button#acceptBtn.button.btn.btn-success.rounded-0 Aceitar
+    button#declineBtn.button.btn.btn-outline-secondary.rounded-0 Rejeitar
