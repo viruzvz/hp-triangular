@@ -16,5 +16,5 @@
 @import "./_titles.scss";
 @import "./_triad.scss";
 @import "./_variables.scss";
-@import "./whatsapp.scss";
-@import "./wrapper-cookie.scss";
+@import "./_whatsapp.scss";
+@import "./_wrapper-cookie.scss";
