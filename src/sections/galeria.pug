@@ -1,11 +1,11 @@
 mixin carousel-image(src, alt)
   .carousel-item.text-center
-    img.img-fluid.lazyload(src=src alt=alt)
+    img.img-fluid.lazyload(data-src=src alt=alt)
 
 mixin col-gallery(src, value, alt)
   .col
     a.logoHover-image(href='#' data-bs-toggle='modal' data-bs-target='#exampleLightbox' title="Abrir foto")
-      img.img-fluid.lazyload(data-bs-target='#lightbox' data-bs-slide-to=value src=src alt=alt width='416' heigh='416')
+      img.img-fluid.lazyload(data-bs-target='#lightbox' data-bs-slide-to=value data-src=src alt=alt width='416' heigh='416')
 .container
   .row
     .col-12
@@ -40,7 +40,7 @@ mixin col-gallery(src, value, alt)
         #lightbox.carousel.slide
           .carousel-inner.bg-dark
             .carousel-item.text-center.active
-              img.img-fluid.mh-100(src='src/assets/galeria/1.webp' alt="Poda de árvores")
+              img.img-fluid.mh-100.lazyload(data-src='src/assets/galeria/1.webp' alt="Poda de árvores")
             +carousel-image('src/assets/galeria/2.webp', 'Trabalhador paisagista sorrindo')
             +carousel-image('src/assets/galeria/3.webp', 'Poda de árvores')
             +carousel-image('src/assets/galeria/4.webp', 'Cuidando do jardim')

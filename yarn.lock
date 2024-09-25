@@ -735,6 +735,11 @@ lazyframe@^2.2.7:
   resolved "https://registry.yarnpkg.com/lazyframe/-/lazyframe-2.2.7.tgz#1f0407b51bfb294b67ee861e62a79c76982332ad"
   integrity sha512-S4Cj6r+8ePZnH0Izn8Y9+Ht0/xylcKwhXljOwllPI8u6zB9gq9j+9BlxeKx7TNP8W/lovek8s6xQD1sSq5dLDw==
 
+lazysizes@^5.3.2:
+  version "5.3.2"
+  resolved "https://registry.yarnpkg.com/lazysizes/-/lazysizes-5.3.2.tgz#27f974c26f5fcc33e7db765c0f4930488c8a2984"
+  integrity sha512-22UzWP+Vedi/sMeOr8O7FWimRVtiNJV2HCa+V8+peZOw6QbswN9k58VUhd7i6iK5bw5QkYrF01LJbeJe0PV8jg==
+
 lodash@^4.17:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
